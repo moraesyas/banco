@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANCO</title>
+
+  <body>
+    <style>
+
+body {
+    background-color: #222222;
+    background-image: url(fundinho.png);
+}
+
+        h1 {
+            font-size: 45px;
+            text-align: center;
+            margin:3% 0;
+            color: #ffffff;
+            background-color: transparent;
+        }
+
+        a {
+            text-align: center;
+            background-color: transparent; 
+            margin: 3% 0; 
+            color: #ffffff;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width:50%;
+            margin: 0 auto 20px;
+            padding: 1%;
+            background: transparent;
+
+        }
+
+        label {
+            color: #ffffff;
+            margin: 5% 0 0;
+            font-size: 25px;
+
+            text-align: center;
+            font-family: 'lora', serif;
+            background-color: transparent;
+        }
+        input {
+            color: #ffffff;
+            background: transparent;
+            font-size: 20px;
+            border: 0;
+            padding: 2%;
+            border: 2px groove #333;
+            border-bottom: 1px groove #333;
+            outline: 0; 
+        }
+      
+    
+        input[type=submit]:hover {
+            border:0;
+            color: #efefef;
+            background: #222222;
+            width: 60%;
+        }   
+        
+        input:focus {
+            background: rgba(128, 128, 128, 0.5);;
+        }
+
+
+
+
+    </style>
+
+</head>
+<body id="corpo" >
+
+    <h1>DADOS DO USUÁRIO</h1>
+
+    
+    
+    <form id="formulario" method="get" action="">
+
+        <label for="doc"> CPF </label>
+        <input type="number" id="doc" maxlength="25" name="doc" placeholder="Escreva sem pontos ou traços" required>        
+
+        <label for="senha"> SENHA </label>
+        <input type="password" id="senha" name="Insira sua senha" required>
+             
+        <a href="bancoon.html">
+            <input type="button" value="VAMOS LÁ">
+        </a>
+    </form>
+
+    <script>
+     alert("Seja bem vindo(a) ao nosso banco, para começar preencha seus dados.");
+    </script>
+</body>
+</html>
